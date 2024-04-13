@@ -9,7 +9,56 @@
 </head>
 
 <body>
+  <div id="hero">
+    <div class="navbar">
+      <img src="./images/logo.png" alt="" class="logo">
+      <div class="user">
+        <button>Explore</button>
+        <img src="./images/user.png" alt="">
+      </div>
+    </div>
+    <div class="container">
+      <div class="info">
+        <h1>Discover</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae laudantium dolorem aperiam nobis nemo,
+          <br>
+          maiores, dignissimos sint ullam laboriosam voluptatum reprehenderit saepe commodi amet.
+        </p>
+        <input type="text" placeholder="Serach">
+      </div>
+    </div>
+    <div class="slider">
+      <img src="./images//left-arrow.png" alt="" id="prev">
+      <div class="preview">
+        <img src="./images//small1.png" alt="" class=" active thumbnail">
+        <img src="./images//small2.png" alt="" class="thumbnail">
+        <img src="./images//small3.png" alt="" class="thumbnail">
+        <img src="./images//small4.png" alt="" class="thumbnail">
+        <img src="./images//small5.png" alt="" class="thumbnail">
+      </div>
+      <img src="./images//right-arrow.png" alt="" id="next">
+    </div>
+  </div>
+  <script>
+    var prev = document.getElementById('prev')
+    var next = document.getElementById('next')
+    var thumbnail = document.getElementsByClassName('thumbnail')
+    var hero = document.getElementById('hero')
+    var backgroundImg = new Array(
+      "images/bg1.png",
+      "images/bg2.png",
+      "images/bg3.png",
+      "images/bg4.png",
+      "images/bg5.png")
+    let i = 0;
+    next.onclick = function () {
+      if (i < 4) {
 
+        hero.style.backgroundImage = 'url(" ' + backgroundImg[i + 1] + ' ")'
+        i++
+      }
+    }
+  </script>
 </body>
 
 </html>
