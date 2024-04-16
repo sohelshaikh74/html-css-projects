@@ -1,0 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: -o-linear-gradient(
+    rgba(0, 0, 0, 08),
+    rgba(0, 0, 0, 0.8),
+    url()
+  );
+}
