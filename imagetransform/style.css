@@ -6,10 +6,17 @@
   box-sizing: border-box;
   font-family: "Outfit", sans-serif;
 }
+:root {
+  /* --primary-color: #edf2fc;
+  --secondary-color: #212121; */
+  --primary-color:#000106
+  --secondary-color:#fff
+}
 .hero {
   height: 100vh;
   width: 100%;
-  background: #edf2fc;
+  /* background: var(--primary-color); */
+  background-color: #000106;
   position: relative;
 }
 
@@ -35,7 +42,8 @@ nav ul li {
 
 nav ul li a {
   text-decoration: none;
-  color: #606163;
+  /* color: var(--secondary-color); */
+  color: #fff;
 }
 
 nav ul li a:hover {
@@ -49,7 +57,9 @@ nav ul li a:hover {
 
 .info h1 {
   font-size: 70px;
-  color: #212121;
+  /* color: var(--secondary-color);
+   */
+   color: #fff;
   margin-bottom: 20px;
 }
 
@@ -58,15 +68,18 @@ span {
 }
 
 .info p {
-  color: #606163;
+  /* color: var(--secondary-color); */
+  color: #fff;
   line-height: 22px;
 }
 
 .info a {
-  background: #212121;
+  /* background: #212121; */
+  background-color: #fff;
   padding: 10px 18px;
   text-decoration: none;
-  color: #fff;
+  /* color: var(--primary-color); */
+  color: #000106;
   border-radius: 5px;
   margin: 30px 0;
   display: inline-block;
@@ -104,10 +117,21 @@ span {
 
 .social-links a {
   font-size: 30px;
-  color: #606163;
+  /* color: var(--secondary-color); */
+  color: #fff;
   margin-right: 20px;
 }
 
 .social-links a:hover {
   color: #ff4231;
+}
+
+#icon {
+  width: 30px;
+  cursor: pointer;
+}
+
+nav ul {
+  flex: 1;
+  text-align: right;
 }
